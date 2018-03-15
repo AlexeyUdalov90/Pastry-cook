@@ -1,0 +1,32 @@
+.production {
+  padding-top: 49px;
+
+  background-color: $production-background;
+  background-image: url("../img/production-bg.png");
+  background-repeat: repeat;
+  box-shadow: inset 0 10px 20px 3px rgba(0, 0, 0, 0.13);
+}
+
+.production__title {
+  margin: 0;
+  margin-bottom: 49px;
+
+  text-align: center;
+}
+
+.production__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.production__item {
+  width: 230px;
+
+  &:not(:nth-child(5n)) {
+    margin-right: 7px;
+  }
+}
