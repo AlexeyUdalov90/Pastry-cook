@@ -327,10 +327,11 @@ img {
     background-color: #9a2829; }
 
 .advantages {
+  padding-top: 49px;
   padding-bottom: 212px;
   background-image: url("../img/advantages-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center 159%; }
+  background-position: center 153%; }
 
 .advantages__title {
   margin: 0;
@@ -392,3 +393,78 @@ img {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
+
+.marks {
+  padding-top: 49px;
+  padding-bottom: 100px;
+  background-color: #f0f0f0;
+  background-image: url("../img/marks-bg.jpg"); }
+
+.marks__title {
+  margin: 0;
+  margin-bottom: 55px;
+  text-align: center; }
+
+.marks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.marks__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  width: 580px; }
+  .marks__image img {
+    margin: auto; }
+
+.marks__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+  width: 500px; }
+
+.marks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .marks__item:not(:last-child) {
+    margin-bottom: 70px; }
+
+.marks__text {
+  margin: 0;
+  margin-top: 25px; }
+
+.marks__name {
+  font-weight: 700; }
