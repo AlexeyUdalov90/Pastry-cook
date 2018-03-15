@@ -1,0 +1,11 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin reset-link {
+  color: inherit;
+  text-decoration: none;
+}
