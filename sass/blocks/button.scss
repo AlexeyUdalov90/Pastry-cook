@@ -1,0 +1,21 @@
+.button {
+  padding: 14px 44px;
+
+  font-size: 18px;
+  color: #ffffff;
+
+  background-color: $button-background;
+  border: none;
+  border-radius: 23px / 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($button-background, 0.7);
+    box-shadow: inset 0 0 0 2px rgb(154, 40, 41);
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
