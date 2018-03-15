@@ -1,0 +1,63 @@
+.marks {
+  padding-top: 49px;
+  padding-bottom: 100px;
+
+  background-color: $marks-background;
+  background-image: url("../img/marks-bg.jpg");
+}
+
+.marks__title {
+  margin: 0;
+  margin-bottom: 55px;
+
+  text-align: center;
+}
+
+.marks__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.marks__image {
+  display: flex;
+
+  margin-right: 20px;
+  width: 580px;
+
+  img {
+    margin: auto;
+  }
+}
+
+.marks__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding: 0 40px;
+  width: 500px;
+}
+
+.marks__item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.marks__text {
+  margin: 0;
+  margin-top: 25px;
+}
+
+.marks__name {
+  font-weight: 700;
+}
