@@ -1,0 +1,82 @@
+.page-header {
+  min-height: 667px;
+
+  background-color: $header-background;
+  background-image: url("../img/header-bg.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.page-header__wrapper {
+  margin-bottom: 70px;
+
+  background-color: rgba(#ffffff, 0.9);
+
+  .content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.page-header__phone {
+  @include reset-link;
+
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: 700;
+  word-spacing: 6px;
+}
+
+.page-header__work-time {
+  padding-left: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  word-spacing: 3px;
+}
+
+.page-header__promo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__slogan {
+  margin-bottom: 52px;
+  width: 840px;
+
+  font-family: "Magnolia Script", serif;
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: -6px;
+}
+
+.page-header__button {
+  @include reset-link;
+
+  margin-bottom: 50px;
+
+  color: #ffffff;
+
+  &:active {
+    color: $button-background;
+  }
+}
