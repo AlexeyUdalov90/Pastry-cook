@@ -545,3 +545,123 @@ img {
 
 .partners__logo {
   margin: auto; }
+
+.news {
+  padding-top: 78px;
+  text-align: center; }
+  .news .content-wrapper {
+    position: relative; }
+
+.news__title {
+  margin: 0;
+  margin-bottom: 45px;
+  text-align: center; }
+
+.news__wrapper {
+  padding: 0 14px;
+  overflow: hidden; }
+
+.news__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 45px; }
+
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 384px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .news__item--exhibition .news-card__date {
+    background-image: url("../img/news-1.jpg"); }
+  .news__item--partner .news-card__date {
+    background-image: url("../img/news-2.jpg"); }
+  .news__item--new-year .news-card__date {
+    background-image: url("../img/news-3.jpg"); }
+
+.news__button {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff; }
+  .news__button:active {
+    color: #9a2829; }
+  .news__button--prev, .news__button--next {
+    position: absolute;
+    z-index: 1;
+    top: 370px;
+    padding: 0;
+    width: 21px;
+    height: 39px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  .news__button--prev {
+    left: 0;
+    background-image: url("../img/prev-button.png"); }
+  .news__button--next {
+    right: 0;
+    background-image: url("../img/next-button.png"); }
+
+.news-card {
+  text-align: left; }
+
+.news-card__link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 22px 18px;
+  border-radius: 15px; }
+  .news-card__link:hover, .news-card__link:focus {
+    -webkit-box-shadow: inset 0 0 0 2px #9a2829;
+            box-shadow: inset 0 0 0 2px #9a2829; }
+
+.news-card__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px 13px;
+  margin-bottom: 25px;
+  height: 192px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #691718;
+  background-position: center;
+  background-size: cover; }
+  .news-card__date span {
+    font-size: 38px;
+    font-weight: 700; }
+
+.news-card__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700; }
+
+.news-card__text {
+  margin: 0;
+  margin-bottom: 20px; }
