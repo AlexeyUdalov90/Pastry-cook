@@ -1,10 +1,10 @@
 .advantages {
-  padding-top: 49px;
-  padding-bottom: 212px;
+  padding-top: 55px;
+  padding-bottom: 206px;
 
   background-image: url("../img/advantages-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center 153%;
+  background-position: center 151%;
 }
 
 .advantages__title {
@@ -25,9 +25,9 @@
 
 .advantages__item {
   position: relative;
-  padding-left: 170px;
-  margin-bottom: 100px;
-  width: 410px;
+  padding-left: 160px;
+  margin-bottom: 110px;
+  width: 420px;
 
   &:not(:nth-child(2n)) {
     margin-right: 20px;
@@ -36,7 +36,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 13px;
     left: 0;
 
     width: 150px;

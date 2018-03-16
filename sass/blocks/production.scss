@@ -1,21 +1,36 @@
 .production {
+  position: relative;
   padding-top: 49px;
 
   background-color: $production-background;
   background-image: url("../img/production-bg.png");
   background-repeat: repeat;
   box-shadow: inset 0 10px 20px 3px rgba(0, 0, 0, 0.13);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 60px;
+    background-color: #ffffff;
+  }
 }
 
 .production__title {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
 
   text-align: center;
 }
 
 .production__list {
   @include reset-list;
+
+  position: relative;
+  z-index: 10;
 
   display: flex;
   justify-content: flex-start;
