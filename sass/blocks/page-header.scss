@@ -13,7 +13,6 @@
   background-color: rgba(#ffffff, 0.9);
 
   .content-wrapper {
-    // position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -60,7 +59,7 @@
   margin-bottom: 52px;
   width: 840px;
 
-  font-family: "Magnolia Script", serif;
+  font-family: "Magnolia Script", "Times", serif;
   font-size: 40px;
   line-height: 64px;
   font-weight: 300;

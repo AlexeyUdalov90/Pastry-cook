@@ -1,0 +1,35 @@
+.social-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.social-list__item {
+  margin-right: 9px;
+}
+
+.social-list__link {
+  @include reset-link;
+
+  display: block;
+  width: 38px;
+  height: 38px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+
+  &--inst {
+    background-image: url("../img/instagram-logo.png");
+  }
+
+  &--vk {
+    background-image: url("../img/vk-logo.png");
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook-logo.png");
+  }
+}
