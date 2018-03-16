@@ -1,0 +1,41 @@
+.about-us {
+  padding-top: 65px;
+  padding-bottom: 80px;
+
+  color: #ffffff;
+
+  background-color: rgb(65, 69, 70);
+  background-image: url("../img/about-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.about-us__wrapper {
+  width: 600px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 36px;
+  font-weight: 900;
+  color: $red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-us__text {
+  margin: 0;
+  margin-bottom: 23px;
+
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.about-us__button {
+  @include reset-link;
+
+  display: inline-block;
+}
