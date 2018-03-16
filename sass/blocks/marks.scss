@@ -1,6 +1,6 @@
 .marks {
-  padding-top: 49px;
-  padding-bottom: 100px;
+  padding-top: 65px;
+  padding-bottom: 118px;
 
   background-color: $marks-background;
   background-image: url("../img/marks-bg.jpg");
@@ -38,8 +38,8 @@
   justify-content: flex-start;
   flex-direction: column;
 
-  padding: 0 40px;
-  width: 500px;
+  padding: 0 45px;
+  width: 490px;
 }
 
 .marks__item {
@@ -49,7 +49,7 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 }
 
@@ -60,4 +60,8 @@
 
 .marks__name {
   font-weight: 700;
+
+  &--up {
+    text-transform: uppercase;
+  }
 }

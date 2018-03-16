@@ -8,7 +8,7 @@
   justify-content: flex-end;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 13px;
+  padding: 10px 13px;
   height: 154px;
 
   background-color: rgb(105, 23, 24);
@@ -17,23 +17,23 @@
   background-size: cover;
 
   &--make {
-    background-image: url("../img/make-img.png");
+    background-image: url("../img/make-img.jpg");
   }
 
   &--ctm {
-    background-image: url("../img/ctm-img.png");
+    background-image: url("../img/ctm-img.jpg");
   }
 
   &--jam {
-    background-image: url("../img/jam-img.png");
+    background-image: url("../img/jam-img.jpg");
   }
 
   &--retail {
-    background-image: url("../img/retail-img.png");
+    background-image: url("../img/retail-img.jpg");
   }
 
   &--horeca {
-    background-image: url("../img/horeca-img.png");
+    background-image: url("../img/horeca-img.jpg");
   }
 }
 
@@ -41,6 +41,7 @@
   @include reset-link;
 
   font-size: 20px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 900;
   color: #ffffff;
@@ -54,12 +55,12 @@
 .production-card__list {
   @include reset-list;
 
-  padding: 20px 25px;
+  padding: 18px 25px 20px;
 }
 
 .production-card__item {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   &::before {
     content: "";
