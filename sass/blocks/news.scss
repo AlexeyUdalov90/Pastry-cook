@@ -1,7 +1,12 @@
 .news {
   padding-top: 78px;
+  margin-bottom: 40px;
 
   text-align: center;
+
+  background-image: url("../img/news-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   .content-wrapper {
     position: relative;
@@ -55,6 +60,7 @@
   @include reset-link;
 
   display: inline-block;
+  margin-bottom: 330px;
 
   color: #ffffff;
 

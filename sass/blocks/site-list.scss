@@ -14,6 +14,7 @@
 }
 
 .site-list__item {
+  position: relative;
   display: flex;
   max-width: 120px;
   margin-right: 32px;
@@ -52,5 +53,9 @@
 
 .site-list__link--logo {
   position: absolute;
-  top: 0;
+  top: -75px;
+  left: -15px;
+
+  width: 175px;
+  height: 200px;
 }
