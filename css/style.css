@@ -634,7 +634,7 @@ img {
   text-decoration: none;
   display: block;
   padding: 22px 18px;
-  border-radius: 15px; }
+  border-radius: 20px; }
   .news-card__link:hover, .news-card__link:focus {
     -webkit-box-shadow: inset 0 0 0 2px #9a2829;
             box-shadow: inset 0 0 0 2px #9a2829; }
@@ -731,3 +731,92 @@ img {
     padding: 5px 0;
     font-size: 16px;
     line-height: 21px; }
+
+.testing {
+  padding-top: 105px;
+  padding-bottom: 115px;
+  color: #ffffff;
+  background-color: #841328;
+  background-image: url("../img/testing-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.testing__request {
+  margin: 0 auto;
+  padding: 25px 35px 43px;
+  width: 870px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px; }
+
+.testing__title {
+  margin: 0;
+  margin-bottom: 43px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px; }
+
+.testing__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.testing__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 425px;
+  counter-reset: myCounter; }
+
+.testing__item {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 20px; }
+  .testing__item::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    top: -5px;
+    left: 13px;
+    color: #ffffff;
+    font: inherit;
+    font-size: 24px;
+    font-weight: 700; }
+
+.testing__form {
+  width: 420px; }
+
+.testing-form__input {
+  margin: 0;
+  margin-bottom: 23px; }
+
+.testing-form__button {
+  padding: 13px 40px; }
+
+.input__field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 17px;
+  font: inherit;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: transparent; }
+  .input__field::-webkit-input-placeholder {
+    color: #ffffff; }
+  .input__field:-ms-input-placeholder {
+    color: #ffffff; }
+  .input__field::-ms-input-placeholder {
+    color: #ffffff; }
+  .input__field::placeholder {
+    color: #ffffff; }

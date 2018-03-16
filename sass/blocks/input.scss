@@ -1,0 +1,16 @@
+.input__field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 17px;
+
+  font: inherit;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: transparent;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
