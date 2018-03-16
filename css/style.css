@@ -65,7 +65,7 @@ img {
   color: #ffffff;
   background-color: #9a2829;
   border: none;
-  border-radius: 23px / 50%;
+  border-radius: 23px;
   cursor: pointer; }
   .button:hover, .button:focus {
     background-color: rgba(154, 40, 41, 0.7);
@@ -85,7 +85,6 @@ img {
   margin-bottom: 70px;
   background-color: rgba(255, 255, 255, 0.9); }
   .page-header__wrapper .content-wrapper {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,6 +176,7 @@ img {
   line-height: 18px; }
 
 .site-list__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +205,10 @@ img {
 
 .site-list__link--logo {
   position: absolute;
-  top: 0; }
+  top: -75px;
+  left: -15px;
+  width: 175px;
+  height: 200px; }
 
 .block-title {
   font-size: 36px;
@@ -702,3 +705,29 @@ img {
   color: inherit;
   text-decoration: none;
   display: inline-block; }
+
+.contacts {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: #646464;
+  background-color: #f0f0f0; }
+
+.contacts__map {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  height: 380px; }
+
+.contacts__table {
+  border-collapse: collapse;
+  text-align: left; }
+  .contacts__table th {
+    width: 295px;
+    padding: 10px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #9a2829; }
+  .contacts__table td {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 21px; }
