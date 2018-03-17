@@ -78,7 +78,7 @@ img {
   min-height: 667px;
   background-color: #f5f5f7;
   background-image: url("../img/header-bg.jpg");
-  background-position: center bottom;
+  background-position: 50% 0;
   background-repeat: no-repeat; }
 
 .page-header__wrapper {
@@ -243,8 +243,14 @@ img {
   background-image: url("../img/logo-bg.png");
   background-repeat: no-repeat; }
 
+.site-list__image--big {
+  width: 175px;
+  height: 125px; }
+
 .site-list__image--small {
-  display: none; }
+  display: none;
+  width: 160px;
+  height: 50px; }
 
 .block-title {
   font-size: 36px;
@@ -416,23 +422,69 @@ img {
   width: 420px; }
   .advantages__item:not(:nth-child(2n)) {
     margin-right: 20px; }
-  .advantages__item::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .advantages__item--production::before {
-    background-image: url("../img/production-icon.svg"); }
-  .advantages__item--service::before {
-    background-image: url("../img/service-icon.svg"); }
-  .advantages__item--approach::before {
-    background-image: url("../img/approach-icon.svg"); }
-  .advantages__item--stuff::before {
-    background-image: url("../img/stuff-icon.svg"); }
+
+.advantages__logo {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 150px;
+  height: 150px; }
+
+.advantages__image {
+  width: 100%;
+  height: auto;
+  opacity: 0; }
+
+.advantages__image--show {
+  -webkit-animation: show 0.9s;
+          animation: show 0.9s;
+  opacity: 1; }
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, -5deg); }
+  100% {
+    -webkit-transform: perspective(150px);
+            transform: perspective(150px); } }
+
+@keyframes show {
+  0% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(150px) rotate3d(1, 0, 0, -5deg); }
+  100% {
+    -webkit-transform: perspective(150px);
+            transform: perspective(150px); } }
 
 .advantages__subtitle {
   margin: 0;
