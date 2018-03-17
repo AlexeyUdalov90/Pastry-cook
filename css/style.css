@@ -431,6 +431,7 @@ img {
   height: 150px; }
 
 .advantages__image {
+  position: relative;
   width: 100%;
   height: auto;
   opacity: 0; }
@@ -451,14 +452,16 @@ img {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
             transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in; }
+            transition-timing-function: ease-in;
+    z-index: 100; }
   60% {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
             transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
     opacity: 1; }
   80% {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -5deg); }
+            transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
+    z-index: 100; }
   100% {
     -webkit-transform: perspective(150px);
             transform: perspective(150px); } }
@@ -474,14 +477,16 @@ img {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
             transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in; }
+            transition-timing-function: ease-in;
+    z-index: 100; }
   60% {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
             transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
     opacity: 1; }
   80% {
     -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -5deg); }
+            transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
+    z-index: 100; }
   100% {
     -webkit-transform: perspective(150px);
             transform: perspective(150px); } }
@@ -680,7 +685,8 @@ img {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s; }
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform; }
 
 .news__item {
   display: -webkit-box;
@@ -714,6 +720,8 @@ img {
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     cursor: pointer; }
   .news__button--prev {
     left: 0;
@@ -962,18 +970,50 @@ img {
 .social-list__item {
   margin-right: 9px; }
 
+.social-list__image {
+  width: 38px;
+  height: 38px; }
+
 .social-list__link {
   color: inherit;
   text-decoration: none;
+  position: relative;
   display: block;
   width: 38px;
   height: 38px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%; }
-  .social-list__link--inst {
-    background-image: url("../img/instagram-logo.png"); }
-  .social-list__link--vk {
-    background-image: url("../img/vk-logo.png"); }
-  .social-list__link--facebook {
-    background-image: url("../img/facebook-logo.png"); }
+  .social-list__link span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 3px;
+    -webkit-transform: translateX(-50%) translateY(0) scale(0);
+            transform: translateX(-50%) translateY(0) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s; }
+    .social-list__link span::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #ffffff;
+      position: absolute;
+      bottom: -5px;
+      left: 40px; }
+  .social-list__link:hover span,
+  .social-list__link:focus span {
+    -webkit-transform: translateX(-50%) translateY(-40px) scale(1);
+            transform: translateX(-50%) translateY(-40px) scale(1);
+    opacity: 1; }
+  .social-list__link:hover .social-list__image,
+  .social-list__link:focus .social-list__image {
+    fill: rgba(255, 255, 255, 0.7); }
