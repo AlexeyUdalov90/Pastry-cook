@@ -161,7 +161,9 @@ img {
   padding-top: 15px;
   padding-bottom: 0;
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
   .page-header__wrapper--fix .site-list__item--logo {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
