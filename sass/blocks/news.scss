@@ -21,7 +21,8 @@
 }
 
 .news__wrapper {
-  padding: 0 14px;
+  margin: 0 auto;
+  width: 1152px;
 
   overflow: hidden;
 }
@@ -35,6 +36,8 @@
   flex-wrap: nowrap;
 
   margin-bottom: 45px;
+
+  transition: transform 0.5s;
 }
 
 .news__item {
