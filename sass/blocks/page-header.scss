@@ -9,6 +9,8 @@
 
 .page-header__wrapper {
   margin-bottom: 70px;
+  padding-top: 28px;
+  padding-bottom: 20px;
 
   background-color: rgba(#ffffff, 0.9);
 
@@ -16,9 +18,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
-    padding-top: 28px;
-    padding-bottom: 20px;
   }
 }
 
@@ -77,5 +76,48 @@
 
   &:active {
     color: $button-background;
+  }
+}
+
+.page-header__wrapper--fix {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  padding-top: 15px;
+  padding-bottom: 0;
+  width: 100%;
+
+  background-color: #ffffff;
+
+  .site-list__item--logo {
+    order: -1;
+  }
+
+  .page-header__work-time {
+    display: none;
+  }
+
+  .site-list {
+    padding-top: 13px;
+  }
+
+  .site-list__link--logo {
+    top: -13px;
+    left: 0;
+
+    padding: 0;
+    width: 175px;
+    height: auto;
+
+    background: none;
+  }
+
+  .site-list__image--big {
+    display: none;
+  }
+
+  .site-list__image--small {
+    display: block;
   }
 }

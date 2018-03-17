@@ -56,6 +56,14 @@
   top: -75px;
   left: -15px;
 
+  padding-top: 20px;
   width: 175px;
-  height: 200px;
+  height: 180px;
+
+  background-image: url("../img/logo-bg.png");
+  background-repeat: no-repeat;
+}
+
+.site-list__image--small {
+  display: none;
 }
