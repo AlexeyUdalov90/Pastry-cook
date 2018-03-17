@@ -64,6 +64,13 @@
   background-repeat: no-repeat;
 }
 
+.site-list__image--big {
+  width: 175px;
+  height: 125px;
+}
+
 .site-list__image--small {
   display: none;
+  width: 160px;
+  height: 50px;
 }

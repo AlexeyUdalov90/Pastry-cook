@@ -32,34 +32,52 @@
   &:not(:nth-child(2n)) {
     margin-right: 20px;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: 0;
+.advantages__logo {
+  position: absolute;
+  top: 13px;
+  left: 0;
 
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
+}
 
-    background-repeat: no-repeat;
-    background-position: center;
+.advantages__image {
+  width: 100%;
+  height: auto;
+
+  opacity: 0;
+}
+
+.advantages__image--show {
+  animation: show 0.9s;
+  opacity: 1;
+}
+
+@keyframes show {
+  0% {
+    transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
   }
 
-  &--production::before {
-    background-image: url("../img/production-icon.svg");
+  40% {
+    transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
   }
 
-  &--service::before {
-    background-image: url("../img/service-icon.svg");
+  60% {
+    transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
   }
 
-  &--approach::before {
-    background-image: url("../img/approach-icon.svg");
+  80% {
+    transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
   }
 
-  &--stuff::before {
-    background-image: url("../img/stuff-icon.svg");
+  100% {
+    transform: perspective(150px);
   }
 }
 
