@@ -38,6 +38,7 @@
   margin-bottom: 45px;
 
   transition: transform 0.5s;
+  will-change: transform;
 }
 
 .news__item {
@@ -84,6 +85,7 @@
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
+    transform: translateZ(0);
     cursor: pointer;
   }
 
