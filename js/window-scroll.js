@@ -13,6 +13,10 @@
     block.style.backgroundPosition = '50%' + pos + 'px';
   };
 
+  advantageImages.forEach(function (image) {
+    image.classList.remove('advantages__image--no-js');
+  });
+
   window.onscroll = function () {
     if (window.pageYOffset >= headerHeight && !navigation.classList.contains('page-header__wrapper--fix')) {
       navigation.classList.add('page-header__wrapper--fix');
