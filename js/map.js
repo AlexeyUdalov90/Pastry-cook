@@ -7,7 +7,7 @@
     var mapBlock = document.querySelector('#map');
     var myMap;
     var coordinates = [60.079420, 30.369925];
-    var marker = '../img/map-marker.png';
+    var marker = 'img/map-marker.png';
 
     mapBlock.classList.remove('contacts__map--no-js');
 
