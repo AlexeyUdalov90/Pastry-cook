@@ -182,7 +182,7 @@ img {
   .page-header__wrapper--fix .site-list__image--big {
     display: none; }
   .page-header__wrapper--fix .site-list__image--small {
-    display: block; }
+    display: inline; }
 
 .site-list {
   padding: 0;
@@ -822,10 +822,14 @@ img {
   background-color: #f0f0f0; }
 
 .contacts__map {
+  position: relative;
   margin-top: 25px;
   margin-bottom: 50px;
   height: 380px; }
-  .contacts__map iframe {
+  .contacts__map img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1180px;
     height: 380px; }
 

@@ -5,6 +5,7 @@
   <title>Кондитер-сервис</title>
   <link rel="icon" href="img/mini-icon.png">
   <link href="css/style.css" rel="stylesheet">
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <header class="page-header">
@@ -370,9 +371,8 @@
       <div class="content-wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
         <span class="contacts__adress">194292, г. Санкт-Петербург, Промзона «Парнас», 8-й Верхний пер. 4</span>
-        <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBeTREwvxB" width="1180" height="380" frameborder="0"></iframe>
-          <!-- <img src="img/map.jpg" alt="Кондитер-Сервис на карте" width="1180" height="380"> -->
+        <div class="contacts__map contacts__map--no-js" id="map">
+          <img src="img/map.jpg" alt="Кондитер-Сервис на карте" width="1180" height="380">
         </div>
         <table class="contacts__table">
           <tr>
@@ -484,5 +484,6 @@
 
   <script src="js/window-scroll.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
