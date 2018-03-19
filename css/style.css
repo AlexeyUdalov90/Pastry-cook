@@ -995,6 +995,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%; }
+  .social-list__link--inst {
+    background-image: url("../img/instagram-logo.png"); }
+  .social-list__link--vk {
+    background-image: url("../img/vk-logo.png"); }
+  .social-list__link--facebook {
+    background-image: url("../img/facebook-logo.png"); }
   .social-list__link span {
     position: absolute;
     top: 0;
@@ -1025,6 +1031,3 @@ img {
     -webkit-transform: translateX(-50%) translateY(-40px) scale(1);
             transform: translateX(-50%) translateY(-40px) scale(1);
     opacity: 1; }
-  .social-list__link:hover .social-list__image,
-  .social-list__link:focus .social-list__image {
-    fill: rgba(255, 255, 255, 0.7); }

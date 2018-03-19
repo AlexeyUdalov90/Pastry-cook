@@ -29,17 +29,17 @@
   background-position: center;
   border-radius: 50%;
 
-  // &--inst {
-  //   background-image: url("../img/instagram-logo.png");
-  // }
-  //
-  // &--vk {
-  //   background-image: url("../img/vk-logo.png");
-  // }
-  //
-  // &--facebook {
-  //   background-image: url("../img/facebook-logo.png");
-  // }
+  &--inst {
+    background-image: url("../img/instagram-logo.png");
+  }
+
+  &--vk {
+    background-image: url("../img/vk-logo.png");
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook-logo.png");
+  }
 
   span {
     position: absolute;
@@ -75,10 +75,5 @@
   &:focus span {
     transform: translateX(-50%) translateY(-40px) scale(1);
     opacity: 1;
-  }
-
-  &:hover .social-list__image,
-  &:focus .social-list__image {
-    fill: rgba(#ffffff, 0.7);
   }
 }
