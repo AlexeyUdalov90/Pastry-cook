@@ -434,64 +434,18 @@ img {
   position: relative;
   width: 100%;
   height: auto;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
   .advantages__image--no-js {
     opacity: 1; }
 
 .advantages__image--show {
-  -webkit-animation: show 0.9s;
-          animation: show 0.9s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1; }
-
-@-webkit-keyframes show {
-  0% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    opacity: 0; }
-  40% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    z-index: 100; }
-  60% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1; }
-  80% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-    z-index: 100; }
-  100% {
-    -webkit-transform: perspective(150px);
-            transform: perspective(150px); } }
-
-@keyframes show {
-  0% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    opacity: 0; }
-  40% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    z-index: 100; }
-  60% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1; }
-  80% {
-    -webkit-transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-            transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-    z-index: 100; }
-  100% {
-    -webkit-transform: perspective(150px);
-            transform: perspective(150px); } }
 
 .advantages__subtitle {
   margin: 0;
