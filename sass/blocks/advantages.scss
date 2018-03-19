@@ -49,6 +49,8 @@
   height: auto;
 
   opacity: 0;
+  transform: translateY(-35px);
+  transition: all 0.8s;
 
   &--no-js {
     opacity: 1;
@@ -56,37 +58,38 @@
 }
 
 .advantages__image--show {
-  animation: show 0.9s;
+  // animation: show 0.9s;
+  transform: translateY(0);
   opacity: 1;
 }
 
-@keyframes show {
-  0% {
-    transform: perspective(150px) rotate3d(1, 0, 0, 90deg);
-    transition-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(150px) rotate3d(1, 0, 0, -20deg);
-    transition-timing-function: ease-in;
-    z-index: 100;
-  }
-
-  60% {
-    transform: perspective(150px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(150px) rotate3d(1, 0, 0, -5deg);
-    z-index: 100;
-  }
-
-  100% {
-    transform: perspective(150px);
-  }
-}
+// @keyframes show {
+//   0% {
+//     transform: translateY(-20px);
+//     transition-timing-function: ease-in;
+//     opacity: 1;
+//   }
+//
+//   40% {
+//     transform: translateY(-15px);
+//     transition-timing-function: ease-in;
+//     // z-index: 100;
+//   }
+//
+//   60% {
+//     transform: translateY(-10px);
+//     // opacity: 1;
+//   }
+//
+//   80% {
+//     transform: translateY(-5px);
+//     // z-index: 100;
+//   }
+//
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 
 .advantages__subtitle {
   margin: 0;
