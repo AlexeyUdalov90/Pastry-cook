@@ -92,16 +92,55 @@
     background-repeat: no-repeat;
     transform: translateZ(0);
     cursor: pointer;
+
+    &:active::before,
+    &:active::after {
+      background-color: $red;
+    }
+  }
+
+  &--prev::before,
+  &--prev::after,
+  &--next::before,
+  &--next::after {
+    content: "";
+    position: absolute;
+
+    width: 26px;
+    height: 2px;
+
+    background-color: rgb(67, 66, 66);
   }
 
   &--prev {
     left: 0;
 
-    background-image: url("../img/prev-button.png");
+    &::before {
+      top: 10px;
+      left: -2px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      bottom: 10px;
+      left: -2px;
+      transform: rotate(45deg);
+    }
   }
 
   &--next {
     right: 0;
-    background-image: url("../img/next-button.png");
+
+    &::before {
+      top: 10px;
+      right: -2px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 10px;
+      right: -2px;
+      transform: rotate(-45deg);
+    }
   }
 }
