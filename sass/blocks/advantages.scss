@@ -2,9 +2,14 @@
   padding-top: 55px;
   padding-bottom: 206px;
 
-  background-image: url("../img/advantages-bg.jpg");
+  background-image: url("../img/advantages-bg-1x.jpg");
   background-repeat: no-repeat;
   background-position: center 151%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantages-bg-2x.jpg");
+    background-size: 686px auto;
+  }
 }
 
 .advantages__title {

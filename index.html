@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Кондитер-сервис</title>
-  <link rel="icon" href="img/mini-icon.png">
+  <link rel="icon" href="favcon.ico" type="image/icon">
+  <link rel="icon" href="img/mini-icon.png" type="image/png">
   <link href="css/style.css" rel="stylesheet">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
@@ -372,50 +373,52 @@
         <div class="contacts__map contacts__map--no-js" id="map">
           <img src="img/map.jpg" alt="Кондитер-Сервис на карте" width="1180" height="380">
         </div>
-        <table class="contacts__table">
-          <tr>
-            <th>Отдел закупок</th>
-            <th>Отдел продаж</th>
-            <th>Отдел клиентского сервиса</th>
-            <th>Производственный департамент</th>
-          </tr>
-          <tr>
-            <td>
-              <b>Телефон:</b> +7 (812) 244-64-23<br>
-              <b>E-mail:</b>  zakup@konditer-servis.ru
-            </td>
-            <td>
-              <b>Телефон:</b> +7 (812) 244-64-23<br>
-              <b>E-mail:</b>  zakup@konditer-servis.ru
-            </td>
-            <td>
-              <b>Телефон:</b> +7 (812) 244-64-23<br>
-              <b>E-mail:</b>  zakup@konditer-servis.ru
-            </td>
-            <td>
-              <b>Телефон:</b> +7 (812) 244-64-23<br>
-              <b>E-mail:</b>  zakup@konditer-servis.ru
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <b>10: 00 — 18:00</b><br>
-              Выходной: вс, сб
-            </td>
-            <td>
-              <b>10: 00 — 20:00</b><br>
-              Выходной: воскресенье
-            </td>
-            <td>
-              <b>10: 00 — 20:00</b><br>
-              Выходной: вс, сб
-            </td>
-            <td>
-              <b>10: 00 — 18:00</b><br>
-              Выходной: вс, сб
-            </td>
-          </tr>
-        </table>
+        <ul class="contacts-list contacts__list">
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Отдел закупок</b>
+            <div class="contacts-list__text">
+              <span class="contacts-list__phone"><b>Телефон:</b> <a href="tel:+78122446423">+7 (812) 244-64-23</a></span><br>
+              <span class="contacts-list__email"><b>E-mail:</b> <a href="mailto:zakup@konditer-servis.ru">zakup@konditer-servis.ru</a></span>
+            </div>
+            <div class="contacts-list__text">
+              <span class="contacts-list__work-time"><b>10:00 — 18:00</b></span><br>
+              <span class="contacts-list__work-time">Выходной: вс, сб</span>
+            </div>
+          </li>
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Отдел продаж</b>
+            <div class="contacts-list__text">
+              <span class="contacts-list__phone"><b>Телефон:</b> <a href="tel:+78122446423">+7 (812) 244-64-23</a></span><br>
+              <span class="contacts-list__email"><b>E-mail:</b> <a href="mailto:zakup@konditer-servis.ru">zakup@konditer-servis.ru</a></span>
+            </div>
+            <div class="contacts-list__text">
+              <span class="contacts-list__work-time"><b>10:00 — 20:00</b></span><br>
+              <span class="contacts-list__work-time">Выходной: воскресенье</span>
+            </div>
+          </li>
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Отдел клиентского сервиса</b>
+            <div class="contacts-list__text">
+              <span class="contacts-list__phone"><b>Телефон:</b> <a href="tel:+78122446423">+7 (812) 244-64-23</a></span><br>
+              <span class="contacts-list__email"><b>E-mail:</b> <a href="mailto:zakup@konditer-servis.ru">zakup@konditer-servis.ru</a></span>
+            </div>
+            <div class="contacts-list__text">
+              <span class="contacts-list__work-time"><b>10:00 — 20:00</b></span><br>
+              <span class="contacts-list__work-time">Выходной: вс, сб</span>
+            </div>
+          </li>
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Производственный департамент</b>
+            <div class="contacts-list__text">
+              <span class="contacts-list__phone"><b>Телефон:</b> <a href="tel:+78122446423">+7 (812) 244-64-23</a></span><br>
+              <span class="contacts-list__email"><b>E-mail:</b> <a href="mailto:zakup@konditer-servis.ru">zakup@konditer-servis.ru</a></span>
+            </div>
+            <div class="contacts-list__text">
+              <span class="contacts-list__work-time"><b>10:00 — 18:00</b></span><br>
+              <span class="contacts-list__work-time">Выходной: вс, сб</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -471,8 +474,6 @@
         </div>
 
         <span class="page-footer__copyright">Кондитер-Сервис &copy; 2018</span>
-
-        <!-- <span>Разработчик: Colorlyx.ru</span> -->
       </div>
     </div>
   </footer>
