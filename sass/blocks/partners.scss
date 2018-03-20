@@ -1,47 +1,12 @@
 .partners {
-  padding-top: 75px;
+  padding-top: 40px;
 }
 
 .partners__title {
   margin: 0;
-  margin-bottom: 78px;
+  margin-bottom: 30px;
 
   text-align: center;
-}
-
-.partners__subtitle {
-  position: relative;
-
-  text-align: center;
-
-  background-color: #ffffff;
-
-  h3 {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    padding: 0 20px;
-    margin: 0;
-    margin-bottom: 45px;
-
-    font-size: $partner-subtitle-font-size;
-    font-weight: 900;
-
-    background-color: inherit;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    top: $partner-subtitle-font-size * 1.2 / 2;
-
-    height: 1px;
-
-    background-color: $red;
-  }
 }
 
 .partners__list {
@@ -53,19 +18,87 @@
   flex-wrap: wrap;
 
   &:not(:last-child) {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
 }
 
 .partners__item {
-  display: flex;
-
-  margin: 0 8px;
-  width: 220px;
-  min-height: 140px;
-  max-height: 200px;
+  margin: 5px;
+  width: 135px;
+  max-height: 110px;
 }
 
-.partners__logo {
-  margin: auto;
+.partners__subtitle {
+  position: relative;
+
+  margin-bottom: 35px;
+  text-align: center;
+
+  h3 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0;
+
+    font-size: $partner-subtitle-font-size;
+    font-weight: 900;
+
+    background-color: inherit;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+
+    height: 1px;
+
+    background-color: $red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partners {
+    padding-top: 75px;
+  }
+
+  .partners__title {
+    margin-bottom: 78px;
+  }
+
+  .partners__subtitle {
+    margin-bottom: 45px;
+
+    background-color: #ffffff;
+
+    h3 {
+      padding: 0 20px;
+    }
+
+    &::after {
+      left: 0;
+      right: 0;
+      top: $partner-subtitle-font-size * 1.2 / 2;
+    }
+  }
+
+  .partners__list:not(:last-child) {
+    margin-bottom: 45px;
+  }
+
+  .partners__item {
+    display: flex;
+
+    margin: 0 8px;
+    width: 220px;
+    min-height: 140px;
+    max-height: 200px;
+  }
+
+  .partners__logo {
+    margin: auto;
+  }
 }

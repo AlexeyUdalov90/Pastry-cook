@@ -2,7 +2,7 @@
   @include reset-list;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -12,7 +12,8 @@
   justify-content: flex-start;
   flex-direction: column;
 
-  width: 295px;
+  margin-bottom: 15px;
+  width: 290px;
 
   font-size: 16px;
   line-height: 21px;
@@ -34,4 +35,11 @@
 
 .contacts-list__text {
   padding: 5px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list__item {
+    width: 295px;
+    margin-bottom: 0;
+  }
 }
