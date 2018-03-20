@@ -2,9 +2,14 @@
   min-height: 667px;
 
   background-color: $header-background;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg-1x.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg-2x.jpg");
+    background-size: 1920px auto;
+  }
 }
 
 .page-header__wrapper {

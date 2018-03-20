@@ -4,9 +4,14 @@
 
   text-align: center;
 
-  background-image: url("../img/news-bg.jpg");
+  background-image: url("../img/news-bg-1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/news-bg-2x.jpg");
+    background-size: 272px auto;
+  }
 
   .content-wrapper {
     position: relative;

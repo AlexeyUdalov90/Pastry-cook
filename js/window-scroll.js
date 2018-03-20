@@ -28,7 +28,7 @@
       parallax(header);
     }
 
-    if (window.pageYOffset >= advantage.offsetTop - navigation.offsetHeight - 100) {
+    if (window.innerHeight / 2 >= advantage.getBoundingClientRect().top) {
       advantageImages.forEach(function (image) {
         image.classList.add('advantages__image--show');
       });
