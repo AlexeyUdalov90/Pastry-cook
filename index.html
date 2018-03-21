@@ -13,42 +13,42 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="content-wrapper">
-        <nav class="page-header__navigation">
-          <div class="page-header__logo">
-            <a class="page-header__link page-header__link--logo">
-              <img src="img/big-logo.svg" class="page-header__image page-header__image--big" alt="Кондитер-сервис" width="175" height="125">
-              <img src="img/small-logo.svg" class="page-header__image page-header__image--small" alt="Кондитер-сервис" width="160" height="50">
-            </a>
-          </div>
-          <ul class="site-list page-header__site-list">
+        <div class="page-header__logo">
+          <a>
+            <img src="img/big-logo.svg" class="page-header__image page-header__image--big" alt="Кондитер-сервис" width="175" height="125">
+            <img src="img/small-logo.svg" class="page-header__image page-header__image--small" alt="Кондитер-сервис" width="160" height="50">
+          </a>
+        </div>
+        <nav class="page-header__navigation page-header__navigation--close">
+          <ul class="site-list page-header__list">
             <li class="site-list__item">
-              <a href="#production" class="site-list__link">Продукция</a>
+              <a href="#production" class="site-list__link page-header__link">Продукция</a>
             </li>
             <li class="site-list__item">
-              <a href="#advantages" class="site-list__link">Преимущества</a>
+              <a href="#advantages" class="site-list__link page-header__link">Преимущества</a>
             </li>
             <li class="site-list__item">
-              <a href="#marks" class="site-list__link">Наши торговые марки</a>
+              <a href="#marks" class="site-list__link page-header__link">Наши торговые марки</a>
             </li>
             <li class="site-list__item">
-              <a href="#partners" class="site-list__link">Партнеры</a>
+              <a href="#partners" class="site-list__link page-header__link">Партнеры</a>
             </li>
             <li class="site-list__item">
-              <a href="#about-us" class="site-list__link">О нас</a>
+              <a href="#about-us" class="site-list__link page-header__link">О нас</a>
             </li>
             <li class="site-list__item">
-              <a href="#news" class="site-list__link">Новости</a>
+              <a href="#news" class="site-list__link page-header__link">Новости</a>
             </li>
             <li class="site-list__item">
-              <a href="#contacts" class="site-list__link">Контакты</a>
+              <a href="#contacts" class="site-list__link page-header__link">Контакты</a>
             </li>
           </ul>
-          <button class="page-header__toggle" type="button">Open menu</button>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
         <div class="page-header__contacts">
           <a href="tel:+78122446423" class="page-header__phone">+7 812 244-64-23</a>
-          <span class="page-header__work-time">Пн - Пт 9:00 — 18:00</span><br>
-          <span class="page-header__work-time">Сб 10:00 — 15:00</span><br>
+          <span class="page-header__work-time">Пн - Пт 9:00 — 18:00</span>
+          <span class="page-header__work-time">Сб 10:00 — 15:00</span>
           <span class="page-header__work-time">Вс Выходной</span>
         </div>
       </div>
@@ -57,8 +57,6 @@
       <span class="page-header__slogan">Производство натуральной продукции из свежих и замороженных фруктов</span>
       <a href="#" class="button page-header__button">Подробнее</a>
     </div>
-
-
   </header>
 
   <main class="page-main">
@@ -219,19 +217,29 @@
         </div>
         <ul class="partners__list">
           <li class="partners__item">
-            <img src="img/partners-logo-1.png" class="partners__logo" alt="ВкусВилл" width="251" height="96">
+            <a href="http://vkusvill.ru/" target="blank">
+              <img src="img/partners-logo-1.png" class="partners__logo" alt="ВкусВилл" width="251" height="96">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-2.png" class="partners__logo" alt="Ярче" width="193" height="87">
+            <a href="https://ярче.рф/" target="blank">
+              <img src="img/partners-logo-2.png" class="partners__logo" alt="Ярче" width="193" height="87">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-3.png" class="partners__logo" alt="Азбука Вкуса" width="274" height="81">
+            <a href="https://av.ru/" target="blank">
+              <img src="img/partners-logo-3.png" class="partners__logo" alt="Азбука Вкуса" width="274" height="81">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-4.png" class="partners__logo" alt="Реал" width="172" height="80">
+            <a href="http://www.tdreal.spb.ru/" target="blank">
+              <img src="img/partners-logo-4.png" class="partners__logo" alt="Реал" width="172" height="80">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-5.png" class="partners__logo" alt="Лента" width="189" height="55">
+            <a href="https://www.lenta.com/" target="blank">
+              <img src="img/partners-logo-5.png" class="partners__logo" alt="Лента" width="189" height="55">
+            </a>
           </li>
         </ul>
         <div class="partners__subtitle">
@@ -239,13 +247,19 @@
         </div>
         <ul class="partners__list">
           <li class="partners__item">
-            <img src="img/partners-logo-6.png" class="partners__logo" alt="Бабушкины Пироги" width="150" height="150">
+            <a>
+              <img src="img/partners-logo-6.png" class="partners__logo" alt="Бабушкины Пироги" width="150" height="150">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-7.png" class="partners__logo" alt="Пироговый Дворик" width="192" height="192">
+            <a href="http://pirogov-dvorik.ru/" target="blank">
+              <img src="img/partners-logo-7.png" class="partners__logo" alt="Пироговый Дворик" width="192" height="192">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-8.png" class="partners__logo" alt="Теремок" width="230" height="104">
+            <a href="http://www.teremok.ru/" target="blank">
+              <img src="img/partners-logo-8.png" class="partners__logo" alt="Теремок" width="230" height="104">
+            </a>
           </li>
         </ul>
         <div class="partners__subtitle">
@@ -253,26 +267,36 @@
         </div>
         <ul class="partners__list">
           <li class="partners__item">
-            <img src="img/partners-logo-9.png" class="partners__logo" alt="Хлебный Дом" width="225" height="127">
+            <a href="http://www.hlebnydom.ru/" target="blank">
+              <img src="img/partners-logo-9.png" class="partners__logo" alt="Хлебный Дом" width="225" height="127">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-10.png" class="partners__logo" alt="Fazer" width="158" height="116">
+            <a href="http://www.fazer.ru/" target="blank">
+              <img src="img/partners-logo-10.png" class="partners__logo" alt="Fazer" width="158" height="116">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-11.png" class="partners__logo" alt="Каравай" width="234" height="79">
+            <a href="http://www.karavay.spb.ru/" target="blank">
+              <img src="img/partners-logo-11.png" class="partners__logo" alt="Каравай" width="234" height="79">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-12.png" class="partners__logo" alt="Аладушкин" width="200" height="200">
+            <a>
+              <img src="img/partners-logo-12.png" class="partners__logo" alt="Аладушкин" width="200" height="200">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/partners-logo-13.png" class="partners__logo" alt="Любимый Край" width="111" height="162">
+            <a href="https://lkray.ru/" target="blank">
+              <img src="img/partners-logo-13.png" class="partners__logo" alt="Любимый Край" width="111" height="162">
+            </a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="news" id="news">
-      <!-- <div class="content-wrapper"> -->
+      <div class="content-wrapper">
         <h2 class="block-title news__title">Новости</h2>
         <button type="button" class="news__button news__button--prev">
           <span class="visually-hidden">Предыдущая новость</span>
@@ -343,7 +367,7 @@
           </ul>
         </div>
         <a href="news.html" class="button news__button">Посмотреть все новости</a>
-      <!-- </div> -->
+      </div>
     </section>
 
     <section class="about-us" id="about-us">

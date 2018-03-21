@@ -17,6 +17,12 @@
   flex-direction: row;
   flex-wrap: wrap;
 
+  a {
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -96,9 +102,5 @@
     width: 220px;
     min-height: 140px;
     max-height: 200px;
-  }
-
-  .partners__logo {
-    margin: auto;
   }
 }

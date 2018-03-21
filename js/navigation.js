@@ -1,8 +1,20 @@
 'use strict';
 
 (function () {
-  var navigationLinks = document.querySelectorAll('.page-header__wrapper [href^="#"]');
+  var navigation = document.querySelector('.page-header__navigation');
+  var navigationLinks = navigation.querySelectorAll('[href^="#"]');
+  var navigationToggle = navigation.querySelector('.page-header__toggle');
   var speed = 0.3;
+
+  navigationToggle.addEventListener('click', function() {
+    if (navigation.classList.contains('page-header__navigation--close')) {
+      navigation.classList.remove('page-header__navigation--close');
+      navigation.classList.add('page-header__navigation--open');
+    } else {
+      navigation.classList.remove('page-header__navigation--open');
+      navigation.classList.add('page-header__navigation--close');
+    }
+      });
 
   navigationLinks.forEach(function (link) {
     link.addEventListener('click', function(evt) {

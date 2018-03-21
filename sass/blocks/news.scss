@@ -76,6 +76,12 @@
   }
 }
 
+@media (max-width: $only-mobile-width) {
+  .news .content-wrapper {
+    padding: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .news {
     padding-top: 78px;
