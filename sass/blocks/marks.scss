@@ -1,6 +1,6 @@
 .marks {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 23px;
+  padding-bottom: 25px;
 
   background-color: $marks-background;
   background-image: url("../img/marks-bg.jpg");
@@ -8,13 +8,13 @@
 
 .marks__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   text-align: center;
 }
 
 .marks__image {
-  margin-bottom: 20px;
+  margin-bottom: 36px;
 
   text-align: center;
 }
@@ -27,13 +27,16 @@
   text-align: center;
 
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
+}
+
+.marks__logo {
+  margin-bottom: 35px;
 }
 
 .marks__text {
   margin: 0;
-  margin-top: 25px;
 
   font-size: 16px;
   hyphens: auto;
@@ -51,7 +54,11 @@
 @media (min-width: $desktop-width) {
   .marks {
     padding-top: 65px;
-    padding-bottom: 118px;
+    padding-bottom: 105px;
+  }
+
+  .marks__title {
+    margin-bottom: 55px;
   }
 
   .marks__wrapper {
@@ -61,8 +68,8 @@
     flex-wrap: wrap;
   }
 
-  .marks__title {
-    margin-bottom: 55px;
+  .marks__image {
+    margin: auto;
   }
 
   .marks__list {
@@ -74,6 +81,14 @@
     width: 490px;
   }
 
+  .marks__item:not(:last-child) {
+    margin-bottom: 85px;
+  }
+
+  .marks__logo {
+    margin-bottom: 25px;
+  }
+
   .marks__text {
     width: 490px;
 
@@ -81,14 +96,3 @@
     hyphens: none;
   }
 }
-
-// .marks__item {
-//   display: flex;
-//   justify-content: flex-start;
-//   flex-direction: column;
-//   align-items: center;
-//
-//   &:not(:last-child) {
-//     margin-bottom: 75px;
-//   }
-// }

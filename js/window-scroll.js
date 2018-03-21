@@ -9,7 +9,7 @@
 
   var parallax = function (block) {
     var pos = 0;
-    pos = - ((window.scrollY - block.offsetTop) / 10);
+    pos = - ((window.scrollY - block.offsetTop) / 12);
     block.style.backgroundPosition = '50%' + pos + 'px';
   };
 

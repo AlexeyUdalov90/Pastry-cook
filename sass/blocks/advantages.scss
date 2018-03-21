@@ -1,6 +1,15 @@
 .advantages {
-  padding-top: 35px;
-  padding-bottom: 170px;
+  padding-top: 40px;
+  padding-bottom: 155px;
+
+  background-image: url("../img/advantages-bg-mobile-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 111%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantages-bg-mobile-2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .advantages__title {
@@ -14,25 +23,13 @@
   @include reset-list;
 }
 
-.advantages__subtitle {
-  margin: 0;
+.advantages__item {
   margin-bottom: 15px;
-
-  font-size: 24px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.advantages__text {
-  margin: 0;
-
-  hyphens: auto;
 }
 
 .advantages__logo {
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
 
   width: 150px;
   height: 150px;
@@ -57,13 +54,29 @@
   opacity: 1;
 }
 
+.advantages__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.advantages__text {
+  margin: 0;
+
+  hyphens: auto;
+}
+
 @media (min-width: $desktop-width) {
   .advantages {
     padding-top: 55px;
     padding-bottom: 206px;
 
     background-image: url("../img/advantages-bg-1x.jpg");
-    background-repeat: no-repeat;
     background-position: center 151%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

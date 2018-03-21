@@ -184,12 +184,17 @@
         <h2 class="block-title marks__title">Наши торговые марки</h2>
         <div class="marks__wrapper">
           <div class="marks__image">
-            <img src="img/jam.png" alt="Наше варенье" width="597" height="527">
+            <picture>
+              <source media="(max-width:768px)" srcset="img/jam-mobile.png 1x, img/jam-1x.png 2x">
+              <img src="img/jam-1x.png" alt="Наше варенье" width="597" height="527" srcset="img/jam-2x.png 2x">
+            </picture>
           </div>
           <ul class="marks__list">
             <li class="marks__item">
               <div class="marks__logo">
-                <img src="img/funny-ezhik-logo.png" alt="Funny Ezhik" width="232" height="146">
+                <picture>
+                  <img src="img/funny-ezhik-logo.png" alt="Funny Ezhik" width="232" height="146" srcset="img/funny-ezhik-logo-2x.png">
+                </picture>
               </div>
               <p class="marks__text"><span class="marks__name marks__name--up">Funny ezhik</span> – это натуральное варенье и
                 напитки отличного качества по приемлемой цене. Домашние технологии производства позволяют
@@ -197,7 +202,9 @@
             </li>
             <li class="marks__item">
               <div class="marks__logo">
-                <img src="img/jam-country-logo.png" alt="Страна Варенья" width="392" height="56">
+                <picture>
+                  <img src="img/jam-country-logo.png" alt="Страна Варенья" width="392" height="56" srcset="img/jam-country-logo-2x.png">
+                </picture>
               </div>
               <p class="marks__text"><span class="marks__name">«Страна Варения»</span> – это натуральные продукты
                 из ягод и фруктов, приготовленные традиционным способом, в основу которого легли рецепты из
@@ -394,7 +401,7 @@
       <div class="content-wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
         <span class="contacts__adress">194292, г. Санкт-Петербург, Промзона «Парнас», 8-й Верхний пер. 4</span>
-        <div class="contacts__map contacts__map--no-js" id="map">
+        <div class="contacts__map" id="map">
           <img src="img/map.jpg" alt="Кондитер-Сервис на карте" width="1180" height="380">
         </div>
         <ul class="contacts-list contacts__list">
@@ -447,29 +454,27 @@
     </section>
 
     <section class="testing">
-      <!-- <div class="content-wrapper"> -->
-        <div class="testing__request">
-          <h2 class="testing__title">Зявка на дегустацию продукции</h2>
-          <div class="testing__wrapper">
-            <ol class="testing__list">
-              <li class="testing__item">Отправьте заявку на дегустацию</li>
-              <li class="testing__item">Вам пеезвонит менеджер</li>
-              <li class="testing__item">Попробуйте наш продукт и выберете понравившиеся наполнители</li>
-            </ol>
-            <form class="testing-form testing__form" action="#" method="post">
-              <p class="input testing-form__input">
-                <label for="name"><span class="visually-hidden">Ваше имя</span></label>
-                <input type="text" class="input__field" name="name" id="name" placeholder="Ваше имя" required>
-              </p>
-              <p class="input testing-form__input">
-                <label for="contact"><span class="visually-hidden">Телефон или e-mail</span></label>
-                <input type="text" class="input__field" name="contact" id="contact" placeholder="Телефон или e-mail" required>
-              </p>
-              <button type="submit" class="button testing-form__button">Отправить</button>
-            </form>
-          </div>
+      <div class="testing__request">
+        <h2 class="testing__title">Зявка на дегустацию продукции</h2>
+        <div class="testing__wrapper">
+          <ol class="testing__list">
+            <li class="testing__item">Отправьте заявку на дегустацию</li>
+            <li class="testing__item">Вам пеезвонит менеджер</li>
+            <li class="testing__item">Попробуйте наш продукт и выберете понравившиеся наполнители</li>
+          </ol>
+          <form class="testing-form testing__form" action="#" method="post">
+            <p class="input testing-form__input">
+              <label for="name"><span class="visually-hidden">Ваше имя</span></label>
+              <input type="text" class="input__field" name="name" id="name" placeholder="Ваше имя" required>
+            </p>
+            <p class="input testing-form__input">
+              <label for="contact"><span class="visually-hidden">Телефон или e-mail</span></label>
+              <input type="text" class="input__field" name="contact" id="contact" placeholder="Телефон или e-mail" required>
+            </p>
+            <button type="submit" class="button testing-form__button">Отправить</button>
+          </form>
         </div>
-      <!-- </div> -->
+      </div>
     </section>
   </main>
 

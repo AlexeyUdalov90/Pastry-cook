@@ -1,16 +1,24 @@
 .about-us {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 40px;
 
   color: #ffffff;
   text-align: center;
 
   background-color: $about-us-background;
+  background-image: url("../img/about-us-bg-mobile-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-us-bg-mobile-2x.jpg");
+    background-size: 768px auto;
+  }
 }
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   font-size: 28px;
   font-weight: 900;
@@ -22,13 +30,14 @@
 
 .about-us__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   font-size: 16px;
+  line-height: 22px;
   text-align: left;
 
   &:last-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 }
 
@@ -46,8 +55,6 @@
     text-align: left;
 
     background-image: url("../img/about-us-bg-1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about-us-bg-2x.jpg");
