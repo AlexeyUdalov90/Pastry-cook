@@ -1,10 +1,10 @@
 .partners {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .partners__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   text-align: center;
 }
@@ -17,21 +17,23 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  a {
-    display: inline-block;
-    vertical-align: top;
-    margin: auto;
-  }
-
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
 .partners__item {
-  margin: 5px;
+  display: flex;
+
+  margin: 15px 5px;
   width: 135px;
   max-height: 110px;
+
+  a {
+    display: block;
+    vertical-align: top;
+    margin: auto;
+  }
 }
 
 .partners__subtitle {
@@ -58,7 +60,7 @@
     z-index: 1;
     left: 0;
     right: 0;
-    bottom: -10px;
+    bottom: -15px;
 
     height: 1px;
 

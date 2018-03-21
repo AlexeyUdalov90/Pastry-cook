@@ -5,17 +5,25 @@
   color: #ffffff;
 
   background-color: $testing-background;
+  background-image: url("../img/testing-bg-mobile-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/testing-bg-mobile-2x.jpg");
+    background-size: 768px auto;
+  }
 }
 
 .testing__request {
-  padding: 20px 15px 30px;
+  padding: 16px 15px 30px;
 
   background-color: rgba(#000000, 0.8);
 }
 
 .testing__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-size: 24px;
   font-weight: 700;
@@ -32,7 +40,7 @@
 .testing__item {
   position: relative;
   padding-left: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   &::before {
     counter-increment: myCounter;
