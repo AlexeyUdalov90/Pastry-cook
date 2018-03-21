@@ -1,6 +1,6 @@
 .contacts {
-  padding-top: 55px;
-  padding-bottom: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   text-align: center;
   color: $contacts-text-color;
@@ -11,7 +11,7 @@
 .contacts__map {
   position: relative;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   height: 380px;
 
   img {
@@ -19,7 +19,18 @@
     top: 0;
     left: 0;
 
-    width: 1180px;
-    height: 380px;
+    // width: 1180px;
+    // height: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .contacts__map {
+    margin-bottom: 50px;
   }
 }

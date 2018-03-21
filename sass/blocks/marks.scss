@@ -1,6 +1,6 @@
 .marks {
-  padding-top: 65px;
-  padding-bottom: 118px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   background-color: $marks-background;
   background-image: url("../img/marks-bg.jpg");
@@ -8,48 +8,26 @@
 
 .marks__title {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 
   text-align: center;
 }
 
-.marks__wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .marks__image {
-  display: flex;
+  margin-bottom: 20px;
 
-  margin-right: 20px;
-  width: 580px;
-
-  img {
-    margin: auto;
-  }
+  text-align: center;
 }
 
 .marks__list {
   @include reset-list;
-
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-
-  padding: 0 45px;
-  width: 490px;
 }
 
 .marks__item {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   &:not(:last-child) {
-    margin-bottom: 75px;
+    margin-bottom: 35px;
   }
 }
 
@@ -57,7 +35,9 @@
   margin: 0;
   margin-top: 25px;
 
-  width: 490px;
+  font-size: 16px;
+  hyphens: auto;
+  text-align: left;
 }
 
 .marks__name {
@@ -67,3 +47,48 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .marks {
+    padding-top: 65px;
+    padding-bottom: 118px;
+  }
+
+  .marks__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .marks__title {
+    margin-bottom: 55px;
+  }
+
+  .marks__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 0 45px;
+    width: 490px;
+  }
+
+  .marks__text {
+    width: 490px;
+
+    font-size: 18px;
+    hyphens: none;
+  }
+}
+
+// .marks__item {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-direction: column;
+//   align-items: center;
+//
+//   &:not(:last-child) {
+//     margin-bottom: 75px;
+//   }
+// }

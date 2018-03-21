@@ -1,8 +1,21 @@
+.testing-form {
+  text-align: center;
+}
+
 .testing-form__input {
   margin: 0;
   margin-bottom: 23px;
 }
 
 .testing-form__button {
+  display: inline-block;
+  vertical-align: top;
+
   padding: 13px 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .testing-form {
+    text-align: left;
+  }
 }

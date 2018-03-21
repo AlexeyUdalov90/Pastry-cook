@@ -1,17 +1,9 @@
 .news {
+  position: relative;
   padding-top: 78px;
   margin-bottom: 40px;
 
   text-align: center;
-
-  background-image: url("../img/news-bg-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/news-bg-2x.jpg");
-    background-size: 272px auto;
-  }
 
   .content-wrapper {
     position: relative;
@@ -20,14 +12,14 @@
 
 .news__title {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 
   text-align: center;
 }
 
 .news__wrapper {
   margin: 0 auto;
-  width: 1152px;
+  width: 320px;
 
   overflow: hidden;
 }
@@ -46,10 +38,29 @@
   will-change: transform;
 }
 
+.news__button {
+  @include reset-link;
+
+  display: inline-block;
+  margin-bottom: 300px;
+  padding: 14px 35px;
+
+  color: #ffffff;
+
+  &:active {
+    color: $button-background;
+  }
+
+  &--next,
+  &--prev {
+    display: none;
+  }
+}
+
 .news__item {
   display: flex;
 
-  width: 384px;
+  width: 320px;
   flex-shrink: 0;
 
   &--exhibition .news-card__date {
@@ -65,82 +76,111 @@
   }
 }
 
-.news__button {
-  @include reset-link;
-
-  display: inline-block;
-  margin-bottom: 330px;
-
-  color: #ffffff;
-
-  &:active {
-    color: $button-background;
-  }
-
-  &--prev,
-  &--next {
-    position: absolute;
-    z-index: 1;
-    top: 370px;
-
+@media (max-width: $only-mobile-width) {
+  .news .content-wrapper {
     padding: 0;
-    width: 21px;
-    height: 39px;
+  }
+}
 
-    border: none;
-    background-color: transparent;
+@media (min-width: $desktop-width) {
+  .news {
+    padding-top: 78px;
+    margin-bottom: 40px;
+
+    background-image: url("../img/news-bg-1x.jpg");
     background-repeat: no-repeat;
-    transform: translateZ(0);
-    cursor: pointer;
+    background-position: center bottom;
 
-    &:active::before,
-    &:active::after {
-      background-color: $red;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/news-bg-2x.jpg");
+      background-size: 272px auto;
     }
   }
 
-  &--prev::before,
-  &--prev::after,
-  &--next::before,
-  &--next::after {
-    content: "";
-    position: absolute;
-
-    width: 26px;
-    height: 2px;
-
-    background-color: rgb(67, 66, 66);
+  .news__title {
+    margin-bottom: 45px;
   }
 
-  &--prev {
-    left: 0;
+  .news__wrapper {
+    margin: 0 auto;
+    width: 1152px;
 
-    &::before {
-      top: 10px;
-      left: -2px;
-      transform: rotate(-45deg);
+    overflow: hidden;
+  }
+
+  .news__button {
+    margin-bottom: 330px;
+
+    &--prev,
+    &--next {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 370px;
+
+      padding: 0;
+      width: 21px;
+      height: 39px;
+
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      transform: translateZ(0);
+      cursor: pointer;
+
+      &:active::before,
+      &:active::after {
+        background-color: $red;
+      }
     }
 
-    &::after {
-      bottom: 10px;
-      left: -2px;
-      transform: rotate(45deg);
+    &--prev::before,
+    &--prev::after,
+    &--next::before,
+    &--next::after {
+      content: "";
+      position: absolute;
+
+      width: 26px;
+      height: 2px;
+
+      background-color: rgb(67, 66, 66);
+    }
+
+    &--prev {
+      left: 0;
+
+      &::before {
+        top: 10px;
+        left: -2px;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: 10px;
+        left: -2px;
+        transform: rotate(45deg);
+      }
+    }
+
+    &--next {
+      right: 0;
+
+      &::before {
+        top: 10px;
+        right: -2px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 10px;
+        right: -2px;
+        transform: rotate(-45deg);
+      }
     }
   }
 
-  &--next {
-    right: 0;
-
-    &::before {
-      top: 10px;
-      right: -2px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      bottom: 10px;
-      right: -2px;
-      transform: rotate(-45deg);
-    }
+  .news__item {
+    width: 384px;
   }
 }

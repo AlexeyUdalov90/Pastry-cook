@@ -6,7 +6,6 @@
   @include reset-link;
 
   display: block;
-  padding: 22px 18px;
 
   border-radius: 20px;
 
@@ -42,6 +41,7 @@
 .news-card__title {
   margin: 0;
   margin-bottom: 28px;
+  padding: 0 15px; //
 
   font-size: 24px;
   line-height: 24px;
@@ -51,4 +51,16 @@
 .news-card__text {
   margin: 0;
   margin-bottom: 20px;
+  padding: 0 15px; //
+}
+
+@media (min-width: $desktop-width) {
+  .news-card__link {
+    padding: 22px 18px;
+  }
+
+  .news-card__title,
+  .news-card__text {
+    padding: 0;
+  }
 }
