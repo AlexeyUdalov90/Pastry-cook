@@ -4,6 +4,7 @@
   var navigation = document.querySelector('.page-header__navigation');
   var navigationLinks = navigation.querySelectorAll('[href^="#"]');
   var navigationToggle = navigation.querySelector('.page-header__toggle');
+  var menu = document.querySelector('.page-header__wrapper');
   var speed = 0.3;
 
   navigationToggle.addEventListener('click', function() {
@@ -23,6 +24,11 @@
       var hash = this.href.replace(/[^#]*(.*)/, '$1');
       var blockTop = document.querySelector(hash).getBoundingClientRect().top;
       var start = null;
+
+      if (window.innerWidth < 1200) {
+        navigation.classList.remove('page-header__navigation--open');
+        navigation.classList.add('page-header__navigation--close');
+      }
 
       requestAnimationFrame(step);
 

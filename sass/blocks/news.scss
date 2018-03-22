@@ -1,7 +1,7 @@
 .news {
   position: relative;
-  padding-top: 78px;
-  // margin-bottom: 40px;
+  padding-top: 50px;
+  margin-bottom: 40px;
 
   text-align: center;
 
@@ -33,20 +33,6 @@
   overflow: hidden;
 }
 
-.news__list {
-  @include reset-list;
-
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  margin-bottom: 45px;
-
-  transition: transform 0.5s;
-  will-change: transform;
-}
-
 .news__button {
   @include reset-link;
 
@@ -64,6 +50,20 @@
   &--prev {
     display: none;
   }
+}
+
+.news__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin-bottom: 45px;
+
+  transition: transform 0.5s;
+  will-change: transform;
 }
 
 .news__item {
@@ -91,6 +91,97 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .news {
+    padding-top: 43px;
+  }
+
+  .news__wrapper {
+    margin: 0 auto;
+    width: 680px;
+  }
+
+  .news__title {
+    margin-bottom: 48px;
+  }
+
+  .news__item {
+    width: 340px;
+  }
+
+  .news__button {
+    margin-bottom: 310px;
+
+    &--prev,
+    &--next {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 370px;
+
+      padding: 0;
+      width: 21px;
+      height: 39px;
+
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      transform: translateZ(0);
+      cursor: pointer;
+
+      &:active::before,
+      &:active::after {
+        background-color: $red;
+      }
+    }
+
+    &--prev::before,
+    &--prev::after,
+    &--next::before,
+    &--next::after {
+      content: "";
+      position: absolute;
+
+      width: 26px;
+      height: 2px;
+
+      background-color: rgb(67, 66, 66);
+    }
+
+    &--prev {
+      left: 10px;
+
+      &::before {
+        top: 10px;
+        left: -2px;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: 10px;
+        left: -2px;
+        transform: rotate(45deg);
+      }
+    }
+
+    &--next {
+      right: 10px;
+
+      &::before {
+        top: 10px;
+        right: -2px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 10px;
+        right: -2px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .news {
     padding-top: 78px;
@@ -102,14 +193,11 @@
   }
 
   .news__wrapper {
-    margin: 0 auto;
     width: 1152px;
-
-    overflow: hidden;
   }
 
   .news__button {
-    margin-bottom: 330px;
+    margin-bottom: 340px;
 
     &--prev,
     &--next {
@@ -178,6 +266,10 @@
         transform: rotate(-45deg);
       }
     }
+  }
+
+  .news__list {
+    margin-bottom: 75px;
   }
 
   .news__item {

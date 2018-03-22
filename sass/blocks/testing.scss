@@ -34,13 +34,15 @@
 .testing__list {
   @include reset-list;
 
+  margin-bottom: 40px;
+
   counter-reset: myCounter;
 }
 
 .testing__item {
   position: relative;
   padding-left: 45px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   &::before {
     counter-increment: myCounter;
@@ -57,11 +59,41 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .testing {
     padding-top: 105px;
     padding-bottom: 115px;
 
+    background-image: url("../img/testing-bg-tablet-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/testing-bg-tablet-2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .testing__request {
+    margin: 0 auto;
+    padding: 25px 65px 45px;
+    width: 660px;
+
+    box-sizing: border-box;
+
+    border-radius: 20px;
+  }
+
+  .testing__title {
+    margin-bottom: 43px;
+    letter-spacing: 2px;
+  }
+
+  .testing__form {
+    width: 420px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .testing {
     background-image: url("../img/testing-bg-1x.jpg");
     background-repeat: no-repeat;
     background-position: center -420px;
@@ -73,16 +105,8 @@
   }
 
   .testing__request {
-    margin: 0 auto;
     padding: 25px 35px 43px;
-    width: 870px;
-
-    background-color: rgba(#000000, 0.8);
-    border-radius: 20px;
-  }
-
-  .testing__title {
-    margin-bottom: 43px;
+    width: 938px;
   }
 
   .testing__wrapper {
@@ -93,10 +117,7 @@
   }
 
   .testing__list {
+    margin: 0;
     width: 425px;
-  }
-
-  .testing__form {
-    width: 420px;
   }
 }

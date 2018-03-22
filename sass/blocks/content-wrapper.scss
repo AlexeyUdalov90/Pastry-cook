@@ -3,6 +3,7 @@
   min-width: 290px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     padding: 0 10px;
     width: 748px;
   }

@@ -47,10 +47,46 @@
   display: inline-block;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .about-us {
     padding-top: 65px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
+
+    background-image: url("../img/about-us-bg-tablet-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-us-bg-tablet-2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .about-us__wrapper {
+    margin-left: 40px;
+    width: 600px;
+
+    text-align: left;
+  }
+
+  .about-us__title {
+    font-size: 36px;
+  }
+
+  .about-us__text {
+    margin-bottom: 24px;
+
+    font-size: 18px;
+    line-height: 1.2;
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+
+    padding-bottom: 77px;
 
     text-align: left;
 
@@ -63,15 +99,15 @@
   }
 
   .about-us__wrapper {
-    width: 600px;
+    margin-left: 0;
   }
 
   .about-us__title {
-    font-size: 36px;
+    margin-bottom: 15px;
   }
 
   .about-us__text {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     font-size: 18px;
 
