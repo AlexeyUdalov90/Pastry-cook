@@ -191,7 +191,7 @@ img {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
   .page-header__wrapper--fix .page-header__contacts {
-    padding-top: 5px;
+    padding-top: 8px;
     margin-right: 50px; }
   .page-header__wrapper--fix .page-header__phone {
     font-size: 16px; }
@@ -1355,7 +1355,7 @@ img {
 
 .testing {
   padding-top: 65px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   color: #ffffff;
   background-color: #841328;
   background-image: url("../img/testing-bg-mobile-1x.jpg");
@@ -1382,13 +1382,13 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   counter-reset: myCounter; }
 
 .testing__item {
   position: relative;
   padding-left: 45px;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
   .testing__item::before {
     counter-increment: myCounter;
     content: counter(myCounter);
@@ -1421,6 +1421,8 @@ img {
   .testing__title {
     margin-bottom: 43px;
     letter-spacing: 2px; }
+  .testing__list {
+    margin-bottom: 40px; }
   .testing__form {
     width: 420px; } }
 
