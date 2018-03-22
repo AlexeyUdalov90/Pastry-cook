@@ -24,6 +24,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 45px;
+  }
+
+  .contacts__map {
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 55px;
@@ -31,6 +42,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 50px;
+    margin-top: 27px;
+    margin-bottom: 45px;
   }
 }

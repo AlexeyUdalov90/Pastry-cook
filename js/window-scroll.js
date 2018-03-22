@@ -20,7 +20,6 @@
   window.onscroll = function () {
     if (window.pageYOffset >= headerHeight && !navigation.classList.contains('page-header__wrapper--fix')) {
       navigation.classList.add('page-header__wrapper--fix');
-      // debugger;
     } else if (window.pageYOffset < headerHeight && navigation.classList.contains('page-header__wrapper--fix')) {
       navigation.classList.remove('page-header__wrapper--fix');
     }

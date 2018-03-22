@@ -13,7 +13,7 @@
   flex-direction: column;
 
   margin-bottom: 25px;
-  width: 290px;
+  width: 295px;
 
   font-size: 16px;
   line-height: 21px;
@@ -29,6 +29,7 @@
   padding: 10px 0;
 
   font-size: 22px;
+  line-height: 28px;
   text-transform: uppercase;
   color: $contacts-th-color;
 }
@@ -37,9 +38,14 @@
   padding: 5px 0;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts-list__item {
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts-list__item {
-    width: 295px;
     margin-bottom: 0;
   }
 }

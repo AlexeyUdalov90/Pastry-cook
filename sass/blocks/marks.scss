@@ -1,6 +1,6 @@
 .marks {
-  padding-top: 23px;
-  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 35px;
 
   background-color: $marks-background;
   background-image: url("../img/marks-bg.jpg");
@@ -14,7 +14,9 @@
 }
 
 .marks__image {
-  margin-bottom: 36px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 250px;
 
   text-align: center;
 }
@@ -32,7 +34,7 @@
 }
 
 .marks__logo {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .marks__text {
@@ -51,10 +53,39 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .marks {
     padding-top: 65px;
-    padding-bottom: 105px;
+    padding-bottom: 73px;
+  }
+
+  .marks__image {
+    margin-bottom: 8px;
+    width: 580px;
+  }
+
+  .marks__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
+
+  .marks__logo {
+    margin-bottom: 20px;
+  }
+
+  .marks__title {
+    margin-bottom: 45px;
+  }
+
+  .marks__text {
+    font-size: 18px;
+    text-align: center;
+    hyphens: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .marks {
+    padding-bottom: 90px;
   }
 
   .marks__title {
@@ -91,8 +122,6 @@
 
   .marks__text {
     width: 490px;
-
-    font-size: 18px;
-    hyphens: none;
+    text-align: left;
   }
 }

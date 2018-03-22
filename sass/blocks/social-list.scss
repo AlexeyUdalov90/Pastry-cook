@@ -10,10 +10,6 @@
   margin-bottom: 25px;
 }
 
-@media (min-width: $desktop-width) {
-  margin: 0;
-}
-
 .social-list__item {
   margin-right: 9px;
 }
@@ -34,19 +30,20 @@
   height: 38px;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/social-icon-sprite.png");
+  background-size: 38px auto;
   border-radius: 50%;
 
   &--inst {
-    background-image: url("../img/instagram-logo.png");
+    background-position: 0 0;
   }
 
   &--vk {
-    background-image: url("../img/vk-logo.png");
+    background-position: 0 -45px;
   }
 
   &--facebook {
-    background-image: url("../img/facebook-logo.png");
+    background-position: 0 -93px;
   }
 
   span {
@@ -83,5 +80,11 @@
   &:focus span {
     transform: translateX(-50%) translateY(-40px) scale(1);
     opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin: 0;
   }
 }
