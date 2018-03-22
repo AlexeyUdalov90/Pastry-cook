@@ -7,6 +7,8 @@
   var menu = document.querySelector('.page-header__wrapper');
   var speed = 0.3;
 
+  navigation.classList.remove('page-header__navigation--no-js');
+
   navigationToggle.addEventListener('click', function() {
     if (navigation.classList.contains('page-header__navigation--close')) {
       navigation.classList.remove('page-header__navigation--close');
