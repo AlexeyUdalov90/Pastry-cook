@@ -43,6 +43,10 @@
   height: 35px;
 }
 
+.page-header__list {
+  display: none;
+}
+
 .page-header__contacts {
   padding-top: 5px;
 }
@@ -92,11 +96,30 @@
 }
 
 .page-header__toggle {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+
+  width: 35px;
+  height: 33px;
   padding: 0;
 
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 35px;
+    height: 5px;
+
+    background-color: rgb(67, 66, 66);
+    border-radius: 4px;
+    box-shadow: 0 11px 0 0 rgb(67, 66, 66),
+      0 -11px 0 0 rgb(67, 66, 66);
+  }
 }
 
 .page-header__wrapper--fix {
@@ -175,34 +198,6 @@
       &::after {
         top: -1px;
         transform: rotate(-45deg);
-      }
-    }
-  }
-
-  .page-header__navigation--close {
-    .page-header__list {
-      display: none;
-    }
-
-    .page-header__toggle {
-      position: absolute;
-      right: 15px;
-      bottom: 5px;
-
-      width: 35px;
-      height: 33px;
-
-      &::before {
-        content: "";
-        display: block;
-
-        width: 35px;
-        height: 5px;
-
-        background-color: rgb(67, 66, 66);
-        border-radius: 4px;
-        box-shadow: 0 11px 0 0 rgb(67, 66, 66),
-          0 -11px 0 0 rgb(67, 66, 66);
       }
     }
   }
@@ -363,7 +358,6 @@
   .page-header__phone {
     line-height: 45px;
   }
-
 
   .page-header__toggle {
     display: none;

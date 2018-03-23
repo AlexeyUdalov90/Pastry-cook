@@ -10,14 +10,8 @@
   navigation.classList.remove('page-header__navigation--no-js');
 
   navigationToggle.addEventListener('click', function() {
-    if (navigation.classList.contains('page-header__navigation--close')) {
-      navigation.classList.remove('page-header__navigation--close');
-      navigation.classList.add('page-header__navigation--open');
-    } else {
-      navigation.classList.remove('page-header__navigation--open');
-      navigation.classList.add('page-header__navigation--close');
-    }
-      });
+    navigation.classList.toggle('page-header__navigation--open');
+  });
 
   navigationLinks.forEach(function (link) {
     link.addEventListener('click', function(evt) {
@@ -28,8 +22,7 @@
       var start = null;
 
       if (window.innerWidth < 1200) {
-        navigation.classList.remove('page-header__navigation--open');
-        navigation.classList.add('page-header__navigation--close');
+        navigation.classList.toggle('page-header__navigation--open');
       }
 
       requestAnimationFrame(step);
