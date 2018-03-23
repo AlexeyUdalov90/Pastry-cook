@@ -25,34 +25,52 @@
 
 .advantages__item {
   margin-bottom: 15px;
-}
 
-.advantages__logo {
-  margin: 0 auto;
-  margin-bottom: 20px;
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
-  width: 150px;
-  height: 150px;
-}
+    width: 150px;
+    height: 150px;
 
-.advantages__image {
-  position: relative;
-  width: 100%;
-  height: auto;
+    background-repeat: no-repeat;
 
-  opacity: 0;
-  transform: translateY(-55px);
-  transition: all 1s;
+    opacity: 0;
+    transform: translateY(-55px);
+    transition: all 1s;
+  }
 
-  &--no-js {
+  &--production::before {
+    background-image: url("../img/production-icon.svg");
+    background-position: -1px center;
+  }
+
+  &--service::before {
+    background-image: url("../img/service-icon.svg");
+    background-position: -2px center;
+  }
+
+  &--approach::before {
+    background-image: url("../img/approach-icon.svg");
+    background-position: -6px center;
+  }
+
+  &--stuff::before {
+    background-image: url("../img/stuff-icon.svg");
+    background-position: -3px center;
+  }
+
+  &--no-js::before {
     transform: translateY(0);
     opacity: 1;
   }
-}
 
-.advantages__image--show {
-  transform: translateY(0);
-  opacity: 1;
+  &--show-icon::before {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .advantages__subtitle {
@@ -94,16 +112,14 @@
     position: relative;
     margin-bottom: 60px;
     padding-left: 190px;
-  }
 
-  .advantages__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-    width: 150px;
-    height: 150px;
-    margin: 0;
+      margin: 0;
+    }
   }
 
   .advantages__subtitle {
@@ -137,21 +153,13 @@
     &:not(:nth-child(2n)) {
       margin-right: 20px;
     }
-  }
 
-  .advantages__logo {
-    position: absolute;
-    top: 13px;
-    left: 0;
-
-    width: 150px;
-    height: 150px;
-    margin: 0;
+    &::before {
+      top: 8px;
+    }
   }
 
   .advantages__subtitle {
     margin-bottom: 20px;
-
-    text-align: left;
   }
 }

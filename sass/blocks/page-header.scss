@@ -93,8 +93,6 @@
 
 .page-header__toggle {
   padding: 0;
-  width: 35px;
-  height: 33px;
 
   background-color: transparent;
   border: none;
@@ -151,14 +149,18 @@
       right: 15px;
       z-index: 101;
 
+      width: 20px;
+      height: 20px;
+
       &::before,
       &::after {
         content: "";
         display: block;
         position: relative;
+        right: 0;
 
-        width: 35px;
-        height: 4px;
+        width: 20px;
+        height: 2px;
 
         background-color: rgb(67, 66, 66);
         border-radius: 4px;
@@ -166,12 +168,12 @@
       }
 
       &::before {
-        top: 2px;
+        top: 1px;
         transform: rotate(45deg);
       }
 
       &::after {
-        top: -2px;
+        top: -1px;
         transform: rotate(-45deg);
       }
     }
@@ -186,6 +188,9 @@
       position: absolute;
       right: 15px;
       bottom: 5px;
+
+      width: 35px;
+      height: 33px;
 
       &::before {
         content: "";
