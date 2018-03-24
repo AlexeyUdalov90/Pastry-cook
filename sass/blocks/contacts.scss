@@ -14,13 +14,17 @@
   margin-bottom: 25px;
   height: 380px;
 
+  overflow: hidden;
+
   img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
 
-    width: 1180px;
+    max-width: 1180px;
     height: 380px;
+
+    transform: translateX(-50%);
   }
 }
 

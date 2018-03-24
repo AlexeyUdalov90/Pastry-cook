@@ -1,14 +1,14 @@
 .site-list {
   @include reset-list;
 
-  padding: 10px;
+  display: none;
 }
 
 .site-list__link {
   @include reset-link;
 
   display: block;
-  padding: 10px 0;
+  padding: 5px;
   margin: 0 auto;
   max-width: 120px;
 
@@ -24,6 +24,11 @@
 @media (min-width: $desktop-width) {
   .site-list {
     padding: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .site-list__link {
