@@ -2,31 +2,36 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff");
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff");
   font-style: normal;
-  font-weight: 900; }
+  font-weight: 900;
+  font-display: swap; }
 
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Robotolight.woff2") format("woff2"), url("../fonts/Robotolight.woff") format("woff");
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: "Magnolia Script";
   src: url("../fonts/Magnoliascript.woff2") format("woff2"), url("../fonts/Magnoliascript.woff") format("woff");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 body {
   padding: 0;
@@ -124,9 +129,6 @@ img {
   width: 96px;
   height: 35px; }
 
-.page-header__list {
-  display: none; }
-
 .page-header__contacts {
   padding-top: 5px; }
 
@@ -203,8 +205,9 @@ img {
     display: inline; }
 
 @media (max-width: 1199px) {
-  .page-header__navigation--open .page-header__list {
+  .page-header__navigation--open .site-list {
     display: block;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -215,6 +218,8 @@ img {
     background-color: #ffffff;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
+  .page-header__navigation--open .site-list__link {
+    padding: 10px 0; }
   .page-header__navigation--open .page-header__toggle {
     position: fixed;
     top: 10px;
@@ -241,10 +246,19 @@ img {
       top: -1px;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-  .page-header__navigation--no-js .page-header__list {
-    display: block; }
-    .page-header__navigation--no-js .page-header__list .site-list__link {
-      padding: 5px 0; }
+  .page-header__navigation--no-js .site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .page-header__navigation--no-js .page-header__toggle {
     display: none; } }
 
@@ -298,8 +312,8 @@ img {
       font-size: 24px; }
     .page-header__wrapper--fix .page-header__work-time {
       display: none; }
-  .page-header__navigation--close .page-header__toggle {
-    bottom: 10px; } }
+    .page-header__wrapper--fix .page-header__toggle {
+      bottom: 10px; } }
 
 @media (min-width: 1200px) {
   .page-header {
@@ -404,13 +418,13 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding: 10px; }
+  display: none; }
 
 .site-list__link {
   color: inherit;
   text-decoration: none;
   display: block;
-  padding: 10px 0;
+  padding: 5px;
   margin: 0 auto;
   max-width: 120px;
   font-size: 16px;
@@ -420,7 +434,19 @@ img {
 
 @media (min-width: 1200px) {
   .site-list {
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .site-list__link {
     position: relative;
     min-height: 38px;
@@ -1285,13 +1311,16 @@ img {
   position: relative;
   margin-top: 25px;
   margin-bottom: 25px;
-  height: 380px; }
+  height: 380px;
+  overflow: hidden; }
   .contacts__map img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 1180px;
-    height: 380px; }
+    left: 50%;
+    max-width: 1180px;
+    height: 380px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 @media (min-width: 768px) {
   .contacts {

@@ -3,7 +3,6 @@
 (function () {
   var header = document.querySelector('.page-header');
   var navigation = header.querySelector('.page-header__wrapper');
-  var headerHeight = header.offsetHeight;
   var advantage = document.querySelector('.advantages');
   var advantageItems = advantage.querySelectorAll('.advantages__item');
   var advantageImages = advantage.querySelectorAll('.advantages__image');
@@ -19,13 +18,15 @@
   }
 
   window.onscroll = function () {
-    if (window.pageYOffset >= headerHeight && !navigation.classList.contains('page-header__wrapper--fix')) {
+    var headerHeight = header.offsetHeight;
+
+    if (window.scrollY >= headerHeight && !navigation.classList.contains('page-header__wrapper--fix')) {
       navigation.classList.add('page-header__wrapper--fix');
-    } else if (window.pageYOffset < headerHeight && navigation.classList.contains('page-header__wrapper--fix')) {
+    } else if (window.scrollY < headerHeight && navigation.classList.contains('page-header__wrapper--fix')) {
       navigation.classList.remove('page-header__wrapper--fix');
     }
 
-    if (window.pageYOffset !== 0 && window.pageYOffset < headerHeight) {
+    if (window.scrollY !== 0 && window.scrollY < headerHeight) {
       parallax(header);
     }
 
